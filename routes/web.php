@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormOne\FormOneController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/form_one', function () {
+//     return view('form_one');
+// });
+
+Route::prefix('Forms')->name('Forms.')->controller(FormOneController::class)->group(function () {
+    Route::get('/form_one', 'form_one')->name('form_one');
+    Route::post('/form_one', 'postcontact')->name('postcontact');
+    Route::get('/ok', 'ok')->name('ok');
 });

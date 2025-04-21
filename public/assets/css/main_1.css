@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the form */
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title Styling */
+h2 {
+  color: #4CAF50;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form Field Styling */
+.form-group label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for input fields */
+.form-control:hover {
+  border-color: #66bb6a;
+  /* Green color on hover */
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+  /* Light green shadow on hover */
+}
+
+/* Hover effect for file input field */
+input[type="file"]:hover {
+  border-color: #66bb6a;
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+
+.form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styling */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* File Upload Styling */
+input[type="file"] {
+  padding: 3px;
+  font-size: 16px;
+}
+
+/* Custom Classes for Margin or Padding Adjustments */
+.mm {
+  margin-bottom: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .form-control,
+  .btn {
+    font-size: 14px;
+  }
+}
