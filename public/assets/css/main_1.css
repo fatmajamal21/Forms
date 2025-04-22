@@ -18,6 +18,37 @@ body {
   margin-right: auto;
 }
 
+
+
+/* Style for the link */
+a {
+
+  margin-top: 20px;
+  /* Add some space above the link */
+  text-decoration: none;
+  /* Remove underline */
+  color: #007BFF;
+  /* Set link color */
+  font-size: 16px;
+  /* Set font size */
+  font-weight: 600;
+  /* Make the text bold */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* توسيط العناصر أفقياً */
+  justify-content: center;
+  /* توسيط العناصر عمودياً */
+  text-align: center;
+}
+
+a:hover {
+  color: #0056b3;
+  /* Darker color on hover */
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
 /* Title Styling */
 h2 {
   color: #4CAF50;
@@ -72,6 +103,10 @@ input[type="file"]:hover {
   border-radius: 5px;
   width: 100%;
   cursor: pointer;
+}
+
+small {
+  color: brown;
 }
 
 .btn:hover {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form One</title>
+    <title> انشاء حساب </title>
     <!-- Add Bootstrap CSS for styling -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('assets/css/main_1.css') }}" rel="stylesheet">
@@ -20,7 +20,7 @@
                 <input type="text" class="form-control 
                 @error('first_name') 
                     is-invalid
-                @enderror  " id="first_name" name="first_name" placeholder="Enter First Name" required >
+                @enderror  " id="first_name" name="first_name" placeholder="Enter First Name"  >
                 @error('first_name') 
                 <small calss="invalid-feedback">{{$message}}</small>
                 @enderror
@@ -30,7 +30,7 @@
                 <label for="last_name">Last Name</label>
                 <input type="text" class="form-control  @error('last_name') 
                     is-invalid
-                @enderror  " id="last_name" name="last_name" placeholder="Enter Last Name" required >
+                @enderror  " id="last_name" name="last_name" placeholder="Enter Last Name"  >
                 @error('last_name') 
                 <small calss="invalid-feedback">{{$message}}</small>
                 @enderror
@@ -41,8 +41,8 @@
                 <input type="email" class="form-control
                 @error('email') 
                     is-invalid
-                @enderror " id="email" name="email" placeholder="Enter Email" required>
-                @error('email') 
+                @enderror " id="email" name="email" placeholder="Enter Email" >
+                @error('email')
                 <small calss="invalid-feedback">{{$message}}</small>
                 @enderror
             </div>
@@ -52,7 +52,7 @@
                 <input type="text" class="form-control
                 @error('password') 
                     is-invalid
-                @enderror " id="password" name="password" placeholder="Enter Passport Number" required>
+                @enderror " id="password" name="password" placeholder="Enter Passport Number" >
                 @error('password') 
                 <small calss="invalid-feedback">{{$message}}</small>
                 @enderror
@@ -63,13 +63,16 @@
                 <input type="file" class="form-control
                  @error('img') 
                     is-invalid
-                @enderror" id="img" name="img" required>
+                @enderror" id="img" name="img" >
                 @error('img') 
                 <small calss="invalid-feedback">{{$message}}</small>
                 @enderror
             </div>
 
             <button type="submit" class="btn">Submit</button>
+            <br></br>
+
+            <a  href="{{ route('Forms.index') }}" >العودة للصفحة الرئيسية   </a>
         </form>
     </div>
 
